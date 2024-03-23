@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Aerial Silks</title>
+    <style>
+      body {
+        background: radial-gradient(
+          343px at 46.3% 47.5%,
+          rgb(242, 242, 242) 0%,
+          rgb(241, 241, 241) 72.9%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: "Prata", serif;
+        max-width: 40ch;
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+      }
+      @keyframes scale {
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      span {
+        display: inline-block;
+        opacity: 0;
+        filter: blur(4px);
+      }
+
+      span:nth-child(1) {
+        animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+
+      span:nth-child(2) {
+        animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+
+      @keyframes fade-in {
+        100% {
+          opacity: 1;
+          filter: blur(0);
+        }
+      }
+
+      h2 {
+        text-align: center;
+        font-family: "Prata", serif;
+        font-size: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 20px auto;
+      }
+
+      p {
+        font-family: "Assistant", sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 30px;
+        padding: 20px;
+        font-size: 20px;
+        font-family: "Signika", sans-serif;
+        transition: all 200ms ease-in-out;
+      }
+
+      .learnSilks {
+        border: 1px solid #f2f2f2;
+      }
+
+      .learnSilks:hover {
+        cursor: pointer;
+        background-color: #f2f2f2;
+      }
+
+      footer {
+        text-align: center;
+        font-family: "Assistant", sans-serif;
+        font-size: 20px;
+      }
+
+      a {
+        font-family: "Assistant", sans-serif;
+        text-decoration: none;
+      }
+
+      .theme-button {
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 50px;
+        background-color: #f2f2f2;
+
+        margin-top: 15px;
+
+        color: black;
+      }
+
+      .theme-button:hover {
+        cursor: pointer;
+        background: black;
+        color: white;
+        border: 1px solid black;
+      }
+
+      .aerial-intro-picture {
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .aerial-intro-picture:hover {
+        filter: contrast(50%);
+        transform: scale(1.3);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        border-radius: 8px;
+        margin: 18px 0;
+      }
+
+      .grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .dark {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(0, 0, 0) 0%,
+          rgb(64, 64, 64) 90.2%
+        );
+        color: white;
+      }
+
+      .dark .container {
+        background: linear-gradient(to right, #434343 0%, black 100%);
+      }
+
+      .dark a {
+        color: white;
+      }
+    </style>
+  </head>
+  <button class="theme-button">Change Theme</button>
+  <body>
+    <div class="container">
+      <h1>
+        <span>Aerial</span>
+        <span>Silks</span>
+      </h1>
+      <h2>My Favourite Hobby</h2>
+
+      <a href="https://en.wikipedia.org/wiki/Aerial_silk" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/908/original/a8.jpeg?1706071741"
+          class="aerial-intro-picture"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/911/original/a9.jpeg?1706072145>"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/910/original/a5.jpeg?1706071916"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/909/original/a7.png?1706071813"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/907/original/a4.jpeg?1706071730"
+        />
+      </div>
+
+      <p>
+        Aerial silks is a type of performance in which one or more artists
+        perform aerial acrobatics while hanging from a specialist fabric. The
+        fabric may be hung as two pieces, or a single piece, folded to make a
+        loop, classified as hammock silks.
+      </p>
+
+      <a href="https://en.wikipedia.org/wiki/Aerial_silk">
+        <strong>📚Learn more on wikipedia</strong></a
+      >
+      <a href="https://acrofit.ca/" target="_blank">
+        <button class="learnSilks">Learn Aerial Silks</button>
+      </a>
+    </div>
+
+    <footer><strong>Coded by Ana Garcia</strong></footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
